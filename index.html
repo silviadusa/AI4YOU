@@ -314,17 +314,17 @@
   .testimonials-grid {
     margin-top: 64px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
   }
   .testimonial-card {
     background: var(--white);
-    padding: 40px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
   }
   .testimonial-quote {
     font-size: 0.95rem; font-weight: 300;
@@ -590,7 +590,8 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
-    .testimonials-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    .testimonials-grid .testimonial-card:last-child:nth-child(odd) { grid-column: span 2; }
     nav { padding: 18px 24px; }
     .nav-links { gap: 24px; }
     section { padding: 80px 24px; }
@@ -745,82 +746,72 @@
     <div class="testimonials-grid">
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">The challenge was thoughtfully designed to integrate practical tasks into daily work. Silvia's inclusive approach stood out, offering a written explanation alongside a podcast version, recognizing that we all absorb information differently. This hands-on method not only deepened my understanding but also made the learning experience engaging and impactful.</p>
+        <p class="testimonial-quote">Ever wondered how you go from using ChatGPT just to fix your grammar to actually making it your daily virtual teammate? Now I know.</p>
         <div>
-          <p class="testimonial-author">Anja</p>
-          <p class="testimonial-role">Challenge participant</p>
+          <p class="testimonial-author">Challenge participant</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">My big recommendation for this special, learning-dense as well as gamified and thoughtful format Silvia Dusa has created! It is great for beginners as well as for advanced AI users — Silvia knows how to make the options accessible to very different people!</p>
+        <p class="testimonial-quote">The challenge is thoughtfully designed to integrate practical tasks into daily work, fostering both learning & comprehension of the AI tools.</p>
         <div>
-          <p class="testimonial-author">Aurora</p>
-          <p class="testimonial-role">Challenge participant</p>
+          <p class="testimonial-author">Challenge participant</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">Ever wondered how you go from using ChatGPT just to fix your grammar to actually making it your daily virtual teammate? Now I know. Huge thanks to Silvia Dusa for the sharp insights, practical tips, and the space to practice and build real habits. Highly recommended!</p>
+        <p class="testimonial-quote">Such a great way to get more comfortable and efficient with AI, putting knowledge into practice.</p>
         <div>
-          <p class="testimonial-author">Lars</p>
-          <p class="testimonial-role">Challenge participant</p>
+          <p class="testimonial-author">Challenge participant</p>
         </div>
       </div>
 
       <div class="testimonial-card">
         <p class="testimonial-quote">I could have not managed my workload without having used AI. So happy I have participated in the AI4YOU challenge.</p>
         <div>
-          <p class="testimonial-author">Mohamed</p>
-          <p class="testimonial-role">Challenge participant</p>
+          <p class="testimonial-author">Challenge participant</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">Small steps beat overwhelm: breaking down AI concepts daily made a big impact. Apply, don't just absorb: building mini-projects transformed theories into skills. Community matters: learning alongside peers sparked ideas and energized me every day. Huge thanks to Silvia Dusa!</p>
+        <p class="testimonial-quote">Breaking down AI concepts daily made a big impact with daily practicing.</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">Challenge winner</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">I come out better than I came in. To me, it was not just learning about AI but also setting small goals and achieving them. 17:00 daily became a natural alarm to me. Thanks Silvia for this great initiative.</p>
+        <p class="testimonial-quote">To me, it was not just learning about AI but also setting small goals and achieving them. 17:00 daily became a natural alarm to me.</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">AI4YOU Challenge</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">It is both informative and practical, opening participants' eyes to many more vast possibilities of AI. Thanks to Silvia's thoughtful guidance, we are no longer just watching from the sidelines — we are actively participating in shaping what's next.</p>
+        <p class="testimonial-quote">Generating creative content, solving complex problems, creating great images and visuals with e.g. Ideogram — which was new but so cool for me!</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">AI4YOU Challenge</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">I'm grateful for Silvia's steps in these 10 days to make us converse with sophisticated AI models in a much more refined and smart way — generating creative content, solving complex problems, creating great images. Each day brings new discoveries.</p>
+        <p class="testimonial-quote">I love to learn future-oriented skills, and I very much recommend this challenge to many people — beginners or advanced in using AI.</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">AI4YOU Challenge</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">I very much recommend this challenge to beginners or those already practised in AI: you can learn a lot, with interesting theory and very cool practice. No one will learn just by reading and listening — give them practice and they will experience excellent transfer!</p>
+        <p class="testimonial-quote">I could even follow it on a business trip — it took the right amount of time, and it was flexible and fun to do each day's step.</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">AI4YOU Challenge</p>
         </div>
       </div>
 
       <div class="testimonial-card">
-        <p class="testimonial-quote">I could even follow it on a business trip, because it took the right amount of time, and it was flexible and fun to do each day's step. I loved it and it enriches me ever since, also for the critical thinking it taught me.</p>
+        <p class="testimonial-quote">No one will learn just by reading and listening to theory. AI4YOU is about transferring theory to practice.</p>
         <div>
           <p class="testimonial-author">Challenge participant</p>
-          <p class="testimonial-role">AI4YOU Challenge</p>
         </div>
       </div>
 
